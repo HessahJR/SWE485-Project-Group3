@@ -1,0 +1,11 @@
+Dataset URL:
+https://www.kaggle.com/datasets/architsharma01/loan-approval-prediction-dataset
+
+License:
+MIT License
+
+Description of original purpose:
+This dataset contains financial records related to loan applications used to determine whether an applicant is eligible for loan approval.
+It includes several financial and personal attributes such as CIBIL credit score, annual income, employment status, loan amount, loan term, number of dependents, and asset values. 
+Each record represents a loan application and is labeled with the loan approval status (approved or rejected). 
+The dataset is commonly used in machine learning and data analysis to develop models that predict the likelihood of loan approval based on applicant characteristics.
