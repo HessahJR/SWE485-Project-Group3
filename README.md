@@ -3,6 +3,7 @@
 ### Group 3 :
 - Hissah Aljreawi | 444201054 
 - Latifa Bahafid  | 444200081
+- Roukaya Al-Chaabouni | 444926353
 
 
 ## Loan Approval Prediction 
