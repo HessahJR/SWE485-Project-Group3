@@ -4,6 +4,8 @@
 - Hissah Aljreawi | 444201054 
 - Latifa Bahafid  | 444200081
 - Roukaya Al-Chaabouni | 444926353
+- Lamia Alzaid | 444200913
+- Jana Almarshad | 444201200
 
 
 ## Loan Approval Prediction 
