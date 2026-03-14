@@ -6,6 +6,7 @@
 - Roukaya Al-Chaabouni | 444926353
 - Lamia Alzaid | 444200913
 - Jana Almarshad | 444201200
+- Leen Alhadlaq | 444200950
 
 
 ## Loan Approval Prediction 
