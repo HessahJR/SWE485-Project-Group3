@@ -1,2 +1,0 @@
-Model,Accuracy,Precision,Recall,F1 Score,ROC-AUC
-Random Forest (Without cibil_score),0.6264637002341921,0.625,0.9981167608286252,0.7686729514140682,0.5915295050520952
