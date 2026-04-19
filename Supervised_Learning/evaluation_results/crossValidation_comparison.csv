@@ -1,0 +1,4 @@
+Model,CV Mean Accuracy,CV Std
+Logistic Regression,0.8556,0.0086
+SVM,0.8832,0.0065
+Random Forest,0.9174,0.0084
