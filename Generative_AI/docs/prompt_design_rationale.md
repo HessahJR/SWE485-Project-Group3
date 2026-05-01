@@ -137,12 +137,13 @@ Keep the response clear, concise, and professional.
 - Luxury Assets Value: 800,000
 - Bank Asset Value: 300,000
 - CIBIL Category: Low
+- CIBIL Score: 420
 - Loan to Income Ratio: 12.50
 - Total Assets Value: 2,600,000
 - Asset to Loan Ratio: 0.10
 
 ### Applicant Profile Segment
-High-risk applicant with low income relative to loan size and limited total assets.
+High-leverage / stretched applicant.
 
 ### Model Prediction
 Rejected
