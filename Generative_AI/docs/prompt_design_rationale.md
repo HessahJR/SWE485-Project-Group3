@@ -12,10 +12,19 @@ This template is designed for bank employees who need to make quick decisions an
  A simple and direct prompt was selected to ensure concise and clear outputs. This approach minimizes unnecessary information and improves response efficiency, making it suitable for users who require only the final decision along with its main justification.
 
 ## Thought Process Behind the Template
-
+The main idea behind this template is to simplify the decision explanation process. The primary goal is to deliver a clear decision to bank employees, particularly in situations where a customer inquires about the reason behind a loan approval or rejection. The template is designed to be consistent and straightforward. The prompt is structured by first providing the Gemini model with the applicant's financial information followed by the machine learning decision, which helps the model understand the full context before generating a response that clearly states whether the loan was approved 
+or rejected along with the most important reason behind that decision.
 
 ## How Domain Knowledge Influenced the Design
+Loan approval or rejection decisions are strongly driven by financial indicators such as annual income, requested loan amount, credit profile, loan-to-income ratio, total assets, and asset-to-loan ratio. For this reason, these indicators were  included in the prompt to provide the model 
+with the most relevant context for generating a meaningful explanation.
 
+The role assignment "You are a bank loan officer" was also  added, as bank officers are responsible for communicating loan decisions to 
+customers in a professional and straightforward manner. This ensures that the generated response aligns with language expected in a real 
+banking context.
+
+Finally, the decision to limit the response to 1-2 sentences was influenced by banking practice, where employees often need quick and direct justifications 
+to communicate to customers.
 
 ## Prompt Structure
 ```python
@@ -49,7 +58,7 @@ Provide a brief summary of the loan decision and the most important reason behin
 ```
 
 ## Example Input/Output
-###input Information:
+### input Information:
 
 Number of Dependents: 1
 Education: Graduate
@@ -67,14 +76,14 @@ Total Assets Value: 50,700,000
 Asset to Loan Ratio: 1.69
 Model Prediction: Approved
 
-###Output: 
+### Output: 
 The loan application has been approved based on the applicant’s high CIBIL category and strong total asset value of 50,700,000, which significantly exceeds the requested loan amount. These factors indicate strong financial stability and low credit risk.
 
 ## Assumptions & Limitations
-###Assumptions:
+### Assumptions:
 -The ML model (Random Forest) prediction is assumed to be correct and reliable.
 -The applicant's provided financial data is accurate and complete.
-###Limitations:
+### Limitations:
 -Includes the Random Forest model prediction as part of the input, meaning the quality of the explanation depends on the accuracy of the prediction.
 -Does not include clustering results, so no group-level personalization is applied.
 -Provides only a brief 1-2 sentence explanation without detailed reasoning.
@@ -82,6 +91,14 @@ The loan application has been approved based on the applicant’s high CIBIL cat
 -Response length is intentionally limited, which may lack depth for cases requiring more nuanced explanations.
 
 ## Lessons Learned During Prompt Testing
+During prompt testing, the template showed that limiting the response to 1-2 sentences effectively reduces irrelevant output and keeps the explanation 
+focused. However, this also restricts the depth of explanation, particularly for borderline cases where multiple factors contribute to the decision.
+
+Testing also showed that clear role assignment is important. By instructing the model to act as a bank loan officer, the responses maintained a 
+professional and consistent tone across different test cases.
+
+Another lesson learned is that including financial indicators such as CIBIL category, loan-to-income ratio, and asset-to-loan ratio improves the relevance of the generated explanation. However, the model tends to prioritize these indicators over other features such as income or employment status, 
+which may result in explanations that overlook other contributing factors.
 
 
 ---
@@ -110,7 +127,6 @@ The loan application has been approved based on the applicant’s high CIBIL cat
 
 
 ## Lessons Learned During Prompt Testing
-
 
 ---
 
