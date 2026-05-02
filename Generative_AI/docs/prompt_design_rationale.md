@@ -6,10 +6,10 @@ This document explains the rationale behind the prompt templates used in the Gen
 # Template 1: Loan Eligibility Evaluator
 
 ## Intended Use Case
-
+This template is designed for bank employees who need to make quick decisions and provide simple explanations when customers inquire about loan eligibility. It helps determine whether a customer can obtain a loan and provides a brief justification that can be easily communicated to the customer.
 
 ## Design Rationale
-
+ A simple and direct prompt was selected to ensure concise and clear outputs. This approach minimizes unnecessary information and improves response efficiency, making it suitable for users who require only the final decision along with its main justification.
 
 ## Thought Process Behind the Template
 
@@ -18,13 +18,68 @@ This document explains the rationale behind the prompt templates used in the Gen
 
 
 ## Prompt Structure
+```python
+def template_1(features: dict, prediction: str) -> str:
+    prompt = f"""
+You are a bank loan officer.
 
+A loan application has been evaluated by a machine learning model.
+
+Applicant Information:
+- Number of Dependents: {features['no_of_dependents']}
+- Education Level: {'Graduate' if features['education'] == 1 else 'Not Graduate'}
+- Self Employment Status: {'Yes' if features['self_employed'] == 1 else 'No'}
+- Annual Income: {features['income_annum']:,}
+- Loan Amount Requested: {features['loan_amount']:,}
+- Residential Assets Value: {features['residential_assets_value']:,}
+- Commercial Assets Value: {features['commercial_assets_value']:,}
+- Luxury Assets Value: {features['luxury_assets_value']:,}
+- Bank Asset Value: {features['bank_asset_value']:,}
+- Loan Term: {features['loan_term']} years
+- CIBIL Category: {'Low' if features['cibil_category'] == 0 else 'Medium' if features['cibil_category'] == 1 else 'High'}
+- Loan to Income Ratio: {features['loan_to_income_ratio']:.2f}
+- Total Assets Value: {features['total_assets']:,}
+- Asset to Loan Ratio: {features['asset_to_loan_ratio']:.2f}
+
+Model Decision: {prediction}
+
+Provide a brief summary of the loan decision and the most important reason behind it in 1-2 sentences.
+"""
+    return call_gemini(prompt)
+```
 
 ## Example Input/Output
+###input Information:
 
+Number of Dependents: 1
+Education: Graduate
+Self Employed: No
+Annual Income: 9,600,000
+Loan Amount Requested: 29,900,000
+Loan Term: 12 years
+residential_assets_value: 2400000
+commercial_assets_value : 17600000
+luxury_assets_value : 22700000
+bank_asset_value : 8000000,
+CIBIL Category: High
+Loan to Income Ratio: 3.11
+Total Assets Value: 50,700,000
+Asset to Loan Ratio: 1.69
+Model Prediction: Approved
+
+###Output: 
+The loan application has been approved based on the applicant’s high CIBIL category and strong total asset value of 50,700,000, which significantly exceeds the requested loan amount. These factors indicate strong financial stability and low credit risk.
 
 ## Assumptions & Limitations
-
+###Assumptions:
+-The ML model (Random Forest) prediction is assumed to be correct and reliable.
+-The applicant's provided financial data is accurate and complete.
+###Limitations:
+-Includes the Random Forest model prediction as part of the input, meaning the quality of the explanation depends on the accuracy of the prediction.
+-Does not include clustering results, so no group-level personalization is applied.
+-Provides only a brief 1-2 sentence explanation without detailed reasoning.
+-May not handle complex or borderline cases accurately, as the prompt is designed for straightforward decisions.
+-Response length is intentionally limited, which may lack depth for cases requiring more nuanced explanations.
 
 ## Lessons Learned During Prompt Testing
 
