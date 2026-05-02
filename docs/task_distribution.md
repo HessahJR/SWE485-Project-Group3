@@ -10,10 +10,8 @@
 
 ### Task Role:
 
-- Phase 1:
-  1- SVM Model: Model Selection & Rationale, Implementation & Training, 
-  Hyperparameter Tuning Process & Results, Comprehensive Evaluation
-  2-  Comparative Analysis & Interpretation
+- Phase 1: Supervised Learning ( SVM Model: Model Selection & Rationale, Implementation & Training, 
+  Hyperparameter Tuning Process & Results, Comprehensive Evaluation, and Comparative Analysis & Interpretation)
   
 - Phase 2:Integrate Generative AI - Template 1
 
