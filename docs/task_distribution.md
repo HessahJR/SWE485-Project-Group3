@@ -10,11 +10,11 @@
 
 ### Task Role:
 Phase 1
-- SVM Model: Model Selection & Rationale, Implementation & Training, 
+- Phase 1: 1- SVM Model: Model Selection & Rationale, Implementation & Training, 
   Hyperparameter Tuning Process & Results, Comprehensive Evaluation
-- Comparative Analysis & Interpretation
-Phase 2:
-- Integrate Generative AI - Template 1
+  2-  Comparative Analysis & Interpretation
+  
+- Phase 2:Integrate Generative AI - Template 1
 
 ## Lamia Alzaid | 444200913
 
