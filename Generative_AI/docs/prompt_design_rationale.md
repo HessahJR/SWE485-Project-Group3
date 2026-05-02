@@ -60,21 +60,21 @@ Provide a brief summary of the loan decision and the most important reason behin
 ## Example Input/Output
 ### input Information:
 
-Number of Dependents: 1
-Education: Graduate
-Self Employed: No
-Annual Income: 9,600,000
-Loan Amount Requested: 29,900,000
-Loan Term: 12 years
-residential_assets_value: 2400000
-commercial_assets_value : 17600000
-luxury_assets_value : 22700000
-bank_asset_value : 8000000,
-CIBIL Category: High
-Loan to Income Ratio: 3.11
-Total Assets Value: 50,700,000
-Asset to Loan Ratio: 1.69
-Model Prediction: Approved
+- Number of Dependents: 1
+- Education: Graduate
+- Self Employed: No
+- Annual Income: 9,600,000
+- Loan Amount Requested: 29,900,000
+- Loan Term: 12 years
+- residential_assets_value: 2400000
+- commercial_assets_value : 17600000
+- luxury_assets_value : 22700000
+- bank_asset_value : 8000000,
+- CIBIL Category: High
+- Loan to Income Ratio: 3.11
+- Total Assets Value: 50,700,000
+- Asset to Loan Ratio: 1.69
+- Model Prediction: Approved
 
 ### Output: 
 The loan application has been approved based on the applicant’s high CIBIL category and strong total asset value of 50,700,000, which significantly exceeds the requested loan amount. These factors indicate strong financial stability and low credit risk.
