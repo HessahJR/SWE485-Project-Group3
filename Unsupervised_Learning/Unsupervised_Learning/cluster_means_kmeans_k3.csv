@@ -1,4 +1,0 @@
-cluster,no_of_dependents,education,self_employed,income_annum,loan_amount,loan_term,residential_assets_value,commercial_assets_value,luxury_assets_value,bank_asset_value,loan_to_income_ratio,total_assets,asset_to_loan_ratio,cibil_category,loan_status,applicants,approval_rate
-0,2.41,0.49,0.5,1948414.8,5722457.07,10.98,2719616.91,1715918.1,5633817.7,1826354.03,2.94,11895706.74,2.19,1.04,0.64,1514,0.637
-1,2.6,0.51,0.5,5592414.66,16649936.79,10.74,7055436.16,4925537.29,16371997.47,5397281.92,3.0,33750252.84,2.15,0.98,0.61,1582,0.606
-2,2.47,0.51,0.51,8354901.96,25235038.36,11.02,14169991.47,9241517.48,25698294.97,8475618.07,3.02,57585421.99,2.39,1.0,0.63,1173,0.626
