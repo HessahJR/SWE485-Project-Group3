@@ -9,8 +9,9 @@
 ## Latifa Bahafid | 444200081
 
 ### Task Role:
-Phase 1
-- Phase 1: 1- SVM Model: Model Selection & Rationale, Implementation & Training, 
+
+- Phase 1:
+  1- SVM Model: Model Selection & Rationale, Implementation & Training, 
   Hyperparameter Tuning Process & Results, Comprehensive Evaluation
   2-  Comparative Analysis & Interpretation
   
