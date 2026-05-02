@@ -81,14 +81,14 @@ The loan application has been approved based on the applicant’s high CIBIL cat
 
 ## Assumptions & Limitations
 ### Assumptions:
--The ML model (Random Forest) prediction is assumed to be correct and reliable.
--The applicant's provided financial data is accurate and complete.
+- The ML model (Random Forest) prediction is assumed to be correct and reliable.
+- The applicant's provided financial data is accurate and complete.
 ### Limitations:
--Includes the Random Forest model prediction as part of the input, meaning the quality of the explanation depends on the accuracy of the prediction.
--Does not include clustering results, so no group-level personalization is applied.
--Provides only a brief 1-2 sentence explanation without detailed reasoning.
--May not handle complex or borderline cases accurately, as the prompt is designed for straightforward decisions.
--Response length is intentionally limited, which may lack depth for cases requiring more nuanced explanations.
+- Includes the Random Forest model prediction as part of the input, meaning the quality of the explanation depends on the accuracy of the prediction.
+- Does not include clustering results, so no group-level personalization is applied.
+- Provides only a brief 1-2 sentence explanation without detailed reasoning.
+- May not handle complex or borderline cases accurately, as the prompt is designed for straightforward decisions.
+- Response length is intentionally limited, which may lack depth for cases requiring more nuanced explanations.
 
 ## Lessons Learned During Prompt Testing
 During prompt testing, the template showed that limiting the response to 1-2 sentences effectively reduces irrelevant output and keeps the explanation 
