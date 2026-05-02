@@ -104,7 +104,6 @@ Applicant Information:
 - Bank Asset Value: {features['bank_asset_value']:,}
 - Loan Term: {features['loan_term']} years
 - CIBIL Category: {'Low' if features['cibil_category'] == 0 else 'Medium' if features['cibil_category'] == 1 else 'High'}
-- CIBIL Score: {features['cibil_score']}
 - Loan to Income Ratio: {features['loan_to_income_ratio']:.2f}
 - Total Assets Value: {features['total_assets']:,}
 - Asset to Loan Ratio: {features['asset_to_loan_ratio']:.2f}
@@ -137,7 +136,6 @@ Keep the response clear, concise, and professional.
 - Luxury Assets Value: 800,000
 - Bank Asset Value: 300,000
 - CIBIL Category: Low
-- CIBIL Score: 420
 - Loan to Income Ratio: 12.50
 - Total Assets Value: 2,600,000
 - Asset to Loan Ratio: 0.10
