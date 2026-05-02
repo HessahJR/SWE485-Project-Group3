@@ -52,7 +52,7 @@ Applicant Information:
 
 Model Decision: {prediction}
 
-Provide a brief summary of the loan decision and the most important reason behind it in 1-2 sentences.
+Provide a brief summary of the loan decision and the most important reason behind it in 1-2 sentences. The explanation should be professional and suitable for bank employees.
 """
     return call_gemini(prompt)
 ```

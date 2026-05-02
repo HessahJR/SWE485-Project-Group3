@@ -1,0 +1,27 @@
+"""
+You are a bank loan officer.
+
+A loan application has been evaluated by a machine learning model.
+
+Applicant Information:
+- Number of Dependents: {features['no_of_dependents']}
+- Education Level: {'Graduate' if features['education'] == 1 else 'Not Graduate'}
+- Self Employment Status: {'Yes' if features['self_employed'] == 1 else 'No'}
+- Annual Income: {features['income_annum']:,}
+- Loan Amount Requested: {features['loan_amount']:,}
+- Residential Assets Value: {features['residential_assets_value']:,}
+- Commercial Assets Value: {features['commercial_assets_value']:,}
+- Luxury Assets Value: {features['luxury_assets_value']:,}
+- Bank Asset Value: {features['bank_asset_value']:,}
+- Loan Term: {features['loan_term']} years
+- CIBIL Category: {'Low' if features['cibil_category'] == 0 else 'Medium' if features['cibil_category'] == 1 else 'High'}
+- Loan to Income Ratio: {features['loan_to_income_ratio']:.2f}
+- Total Assets Value: {features['total_assets']:,}
+- Asset to Loan Ratio: {features['asset_to_loan_ratio']:.2f}
+
+Model Decision: {prediction}
+
+Provide a brief summary of the loan decision and the most important reason behind it in 1-2 sentences. The explanation should be professional and 
+suitable for bank employees.
+
+"""

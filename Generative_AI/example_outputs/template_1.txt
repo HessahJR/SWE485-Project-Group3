@@ -1,0 +1,8 @@
+Template 1 — Output Summary
+============================================================
+Test Case 1 (Strong)     : Your loan application has been approved. This decision is primarily driven by your excellent CIBIL category and the substantial value of your assets, providing strong security for the requested loan amount.
+------------------------------------------------------------
+Test Case 2 (Weak)       : The loan application has been rejected primarily due to the requested loan amount being excessively high relative to your annual income (Loan to Income Ratio of 12.50) and a very low Asset to Loan Ratio (0.10), indicating insufficient repayment capacity and collateral, further compounded by a low CIBIL category.
+------------------------------------------------------------
+Test Case 3 (Borderline) : Your loan application has been rejected by our machine learning model. The most significant factor contributing to this decision is the Asset to Loan Ratio of 0.93, indicating that your total asset value is less than the requested loan amount, posing a higher risk.
+============================================================
