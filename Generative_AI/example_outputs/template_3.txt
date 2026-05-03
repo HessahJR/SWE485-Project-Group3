@@ -1,0 +1,19 @@
+Template 3 — Output Summary
+============================================================
+Test Case 1 (Strong)     : Your loan application has been approved. This decision is primarily based on your exceptionally strong financial profile, including a high annual income, substantial total assets providing robust collateral, and an excellent CIBIL category.
+------------------------------------------------------------
+Test Case 2 (Weak)       : Your loan application has been rejected primarily due to the high financial risk associated with the requested loan amount relative to your current income and assets, combined with your low CIBIL category. Specifically, your Loan to Income Ratio is exceptionally high at 12.50, and your total assets cover only 10% of the requested loan amount.
+
+To improve your chances of approval in the future, we recommend:
+1.  **Improve Creditworthiness:** Focus on improving your CIBIL category by consistently managing existing credit obligations and promptly addressing any outstanding debts.
+2.  **Adjust Loan Request:** Consider applying for a significantly lower loan amount that is more proportionate to your current annual income and total asset value.
+3.  **Strengthen Financial Standing:** Strategically increase your total asset value or demonstrate a higher, consistent income to better support a future loan application.
+------------------------------------------------------------
+Test Case 3 (Borderline) : Your loan application has been rejected primarily due to a high Loan to Income Ratio and an Asset to Loan Ratio below 1.0, indicating potential concerns regarding repayment capacity and insufficient collateral for the requested loan amount.
+
+To improve your chances of loan approval in the future, we recommend the following:
+
+1.  **Reduce Loan Amount:** Consider applying for a lower loan amount that aligns more closely with your current income and total asset value.
+2.  **Increase Income/Assets:** Focus on increasing your annual income or accumulating additional assets to strengthen your financial position.
+3.  **Improve CIBIL Category:** Work towards improving your CIBIL category by consistently demonstrating responsible credit behavior over time.
+============================================================
