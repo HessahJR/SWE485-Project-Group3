@@ -30,8 +30,10 @@
 ## Leen Alhadlaq | 444200950
 
 ### Task Role:
-- Phase 1:
-- Phase 2: Integrate Generative AI - Template 2
+
+- Phase 1: Supervised Learning (Logistic Regression: Model Selection & Rationale, Implementation & Training, Hyperparameter Tuning Process & Results, Comprehensive Evaluation, Comparative Analysis & Interpretation) and Conclusion: Best Model Selection & Reasoning.
+
+- Phase 2: Generative AI Integration (Template 2 Design Documentation, Template 2 Testing Framework & Output Comparison, Template 2 Analysis) and Integration Plan for Final System.
 
 ## Roukaya Al-Chaabouni | 444926353
 
