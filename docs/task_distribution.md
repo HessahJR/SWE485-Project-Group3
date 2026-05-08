@@ -44,5 +44,5 @@
 
 ## Layan Alrumayh | 444200378
 ### Task Role:
-- Phase 1:
+- Phase 1:Supervised Learning (Random Forest: Model Selection & Rationale, Implementation & Training, Hyperparameter Tuning Process & Results, Comprehensive Evaluation & Interpretation) and Integration Step: Random Forest Integration Planning for the Final System.
 - Phase 2:
