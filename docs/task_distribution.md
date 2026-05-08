@@ -26,7 +26,8 @@
 
 ### Task Role:
 - Phase 1:
-- Phase 2:
+- Phase 2:Unsupervised Learning (Clustering Rationale & Algorithm Selection, Data Preparation, Cluster Determination using Elbow Method & Silhouette Analysis).
+
 
 ## Leen Alhadlaq | 444200950
 
@@ -40,9 +41,9 @@
 
 ### Task Role:
 - Phase 1: Data & Domain Team (Exploratory Data Analysis (EDA))
-- Phase 2:
+- Phase 2:Unsupervised Learning (Cluster Interpretation & Profiles, Integration Strategy with the Advice System, and Challenges & Limitations).
 
 ## Layan Alrumayh | 444200378
 ### Task Role:
 - Phase 1:Supervised Learning (Random Forest: Model Selection & Rationale, Implementation & Training, Hyperparameter Tuning Process & Results, Comprehensive Evaluation & Interpretation) and Integration Step: Random Forest Integration Planning for the Final System.
-- Phase 2:
+- Phase 2:Phase 2: Unsupervised Learning (K-Means & DBSCAN Implementation, Evaluation Metrics & Visualizations, PCA/t-SNE Cluster Visualization, and Cluster Size Distribution).
