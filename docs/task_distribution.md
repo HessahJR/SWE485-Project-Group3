@@ -13,7 +13,7 @@
 - Phase 1: Supervised Learning (SVM Model: Model Selection & Rationale, Implementation & Training, 
   Hyperparameter Tuning Process & Results, Comprehensive Evaluation, and Comparative Analysis & Interpretation)
   
-- Phase 2:Integrate Generative AI - Template 1
+- Phase 2: Generative AI Integration (Template 1 Design Documentation, Template 1 Testing Framework & Output Comparison, Template 1 Qualitative & Quantitative Analysis), and Generative AI Model Selection & Setup
 
 ## Lamia Alzaid | 444200913
 
