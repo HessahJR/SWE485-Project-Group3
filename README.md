@@ -7,6 +7,7 @@
 - Lamia Alzaid | 444200913
 - Jana Almarshad | 444201200
 - Leen Alhadlaq | 444200950
+- Layan Alrumayh | 444200378
 
 
 ## Loan Approval Prediction 
