@@ -319,30 +319,131 @@ Another lesson learned is that including financial indicators and the applicant 
 
 ---
 
-# Template 4: 
+# Template 4: Customer-Friendly Loan Explanation
 
 ## Intended Use Case
 
+This template is designed for everyday customers and non-expert clients who interact with the bank through self-service channels (mobile apps, customer portals, or front-desk interactions). It is intended to explain loan approval decisions in a clear, friendly, and easy-to-understand way without requiring financial knowledge. Unlike previous templates that target employees or analysts, this template focuses on accessibility, emotional tone, and personalization so that the client feels respected and informed regardless of the outcome.
 
 ## Design Rationale
 
+A conversational and supportive prompt style was selected to ensure that responses are simple, human-like, and easy to understand. The goal is to translate technical financial indicators into everyday language so that non-expert clients can clearly understand the reason behind the decision. The prompt also emphasizes tone and emotional clarity, especially in rejection cases, to maintain a positive client experience. This makes the template more suitable for direct customer communication compared to technical or analytical templates.
 
 ## Thought Process Behind the Template
 
+Template 4 was designed to bridge the gap between technical model outputs and real-world client communication. While earlier templates focused on accuracy and financial reasoning, this template prioritizes how the message is perceived by the client.
+
+The prompt first provides the model with detailed applicant financial data, the model decision, and the cluster-based profile group. This ensures that the model has full context before generating the response. The instructions then guide the model to simplify the explanation, avoid technical terms, and present the decision in a warm and supportive tone.
+
+Special attention was given to rejection cases. Instead of presenting a purely analytical explanation, the template encourages a gentle and encouraging message that helps maintain trust and avoids discouraging the client.
 
 ## How Domain Knowledge Influenced the Design
 
+Loan decisions are typically based on financial indicators such as income, credit history, loan size, and asset values. However, these indicators are often expressed using technical terms (e.g., loan-to-income ratio, asset-to-loan ratio) that are difficult for non-expert clients to understand.
+
+Domain knowledge influenced the decision to translate these technical metrics into plain language concepts such as:
+- “ability to repay the loan”
+- “overall savings and assets”
+- “financial stability”
+
+In addition, the inclusion of the cluster profile (e.g., modest-income applicant, affluent applicant) reflects how banks segment clients into financial groups. This allows the explanation to feel more personalized and relevant to the client’s situation.
+
+Finally, the tone of communication was influenced by real banking practices, where customer-facing communication must remain polite, respectful, and supportive, even when delivering negative decisions.
 
 ## Prompt Structure
 
+```python
+def template_4(features: dict, prediction: str, cluster_profile: str) -> str:
+    prompt = f"""
+You are a friendly and supportive bank assistant speaking directly to a customer.
+
+The customer's loan application has been reviewed by an automated system. Your job is to explain the result in simple, everyday language, as if you were sitting across from the customer in a branch — warm, respectful, and easy to understand.
+
+Customer Information:
+- Number of Dependents: {features['no_of_dependents']}
+- Education Level: {'Graduate' if features['education'] == 1 else 'Not Graduate'}
+- Self Employment Status: {'Yes' if features['self_employed'] == 1 else 'No'}
+- Annual Income: {features['income_annum']:,}
+- Loan Amount Requested: {features['loan_amount']:,}
+- Residential Assets Value: {features['residential_assets_value']:,}
+- Commercial Assets Value: {features['commercial_assets_value']:,}
+- Luxury Assets Value: {features['luxury_assets_value']:,}
+- Bank Asset Value: {features['bank_asset_value']:,}
+- Loan Term: {features['loan_term']} years
+- Credit History Strength: {'Weak' if features['cibil_category'] == 0 else 'Average' if features['cibil_category'] == 1 else 'Strong'}
+- Loan to Income Ratio: {features['loan_to_income_ratio']:.2f}
+- Total Assets Value: {features['total_assets']:,}
+- Asset to Loan Ratio: {features['asset_to_loan_ratio']:.2f}
+
+Customer Profile Group: {cluster_profile}
+
+System Decision: {prediction}
+
+Write a short, friendly response of 3 to 4 sentences that:
+1. Greets the customer warmly and shares the decision in plain language.
+2. Explains the main reason behind the decision using everyday words (avoid technical terms).
+3. Personalizes the message using the customer profile group.
+4. Ends with a supportive closing message.
+
+Keep the tone warm, respectful, and easy to understand.
+"""
+    return call_gemini(prompt)
 
 ## Example Input/Output
 
+### Input Information
+- Number of Dependents: 1
+- Education: Graduate
+- Self Employed: No
+- Annual Income: 9,600,000
+- Loan Amount Requested: 29,900,000
+- Loan Term: 12 years
+- Residential Assets Value: 2,400,000
+- Commercial Assets Value: 17,600,000
+- Luxury Assets Value: 22,700,000
+- Bank Asset Value: 8,000,000
+- Credit History Strength: Strong
+- Loan to Income Ratio: 3.11
+- Total Assets Value: 50,700,000
+- Asset to Loan Ratio: 1.69
+
+### Applicant Profile Segment
+Affluent / large-loan applicant.
+
+### Model Prediction
+Approved
+
+### Output
+Hello there! I have some fantastic news regarding your loan application – it's been approved! Our automated system highlighted your excellent credit history and the healthy value of your assets, showing us you have a very strong financial foundation. These factors were key in approving such a significant loan for a valued client like yourself. Congratulations, and we're truly happy to help you move forward!
+
+---
 
 ## Assumptions & Limitations
 
+### Assumptions
+- The machine learning prediction is assumed to be correct and reliable.
+- The applicant's financial information is complete and accurate.
+- The cluster profile accurately represents the client’s overall financial segment and is meaningful enough to support personalization.
+- The client is a non-expert reader who benefits more from simple and accessible language than from technical detail.
+
+### Limitations
+- The output depends on the quality of the model prediction; an incorrect prediction will still be explained in a clear but potentially misleading way.
+- Simplifying technical indicators reduces analytical precision, making this template unsuitable for internal financial analysis.
+- Personalization is limited to the cluster profile and does not include deeper individual context such as customer goals or history with the bank.
+- The friendly tone used in rejection cases may be perceived as too soft in more formal communication settings.
+- The responses are generated in English only and may require localization for multilingual client bases.
+
+---
 
 ## Lessons Learned During Prompt Testing
+
+During testing, Template 4 demonstrated strong performance in delivering clear and user-friendly explanations across all three test cases. The responses consistently reflected the model’s decision while maintaining a warm and supportive tone, making them easy for non-expert clients to understand.
+
+In approved cases, the explanation highlights positive financial factors such as strong credit history and high asset value, reinforcing confidence in the decision. In rejected cases, the template avoids technical language and instead explains the outcome using simple reasoning, while providing gentle encouragement to maintain a positive client experience.
+
+Another key observation is that using the client’s profile group improves personalization, making the response feel more relevant rather than generic. However, this comes with a trade-off, as the explanations prioritize clarity and tone over detailed financial reasoning.
+
+Overall, Template 4 is highly effective for customer-facing communication, where readability, tone, and personalization are more important than technical depth.
 
 
 ---
