@@ -4,7 +4,7 @@
 
 ### Task Role:
 - Phase 1: Data & Domain Team (Problem Definition & Domain Selection,and Dataset Selection & Justification) 
-- Phase 2: Integrate Generative AI - Template 3
+- Phase 2: Generative AI Integration (Template 3 Design Documentation, Template 3 Testing Framework & Output Comparison, Template 3 Analysis) and Best Prompt Selection & Justification.
 
 ## Latifa Bahafid | 444200081
 
