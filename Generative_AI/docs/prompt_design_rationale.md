@@ -388,6 +388,7 @@ Write a short, friendly response of 3 to 4 sentences that:
 Keep the tone warm, respectful, and easy to understand.
 """
     return call_gemini(prompt)
+```
 
 ## Example Input/Output
 
