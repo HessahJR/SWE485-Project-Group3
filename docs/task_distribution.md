@@ -41,3 +41,8 @@
 ### Task Role:
 - Phase 1: Data & Domain Team (Exploratory Data Analysis (EDA))
 - Phase 2:
+
+## Layan Alrumayh | 444200378
+### Task Role:
+- Phase 1:
+- Phase 2:
