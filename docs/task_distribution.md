@@ -10,7 +10,7 @@
 
 ### Task Role:
 
-- Phase 1: Supervised Learning ( SVM Model: Model Selection & Rationale, Implementation & Training, 
+- Phase 1: Supervised Learning (SVM Model: Model Selection & Rationale, Implementation & Training, 
   Hyperparameter Tuning Process & Results, Comprehensive Evaluation, and Comparative Analysis & Interpretation)
   
 - Phase 2:Integrate Generative AI - Template 1
@@ -18,8 +18,9 @@
 ## Lamia Alzaid | 444200913
 
 ### Task Role:
-- Phase 1:
-- Phase 2:
+- Phase 1: Preprocessing & Visualization Team (Correlation Heatmap of Numerical Features, Class Distribution Analysis, Categorical Features vs. Loan Status, Feature Distributions, Missing Value Analysis, Feature Importance – Preliminary Analysis, and Key Feature Analysis: CIBIL Score)
+
+- Phase 2: Generative AI Integration (Template 4 Design Documentation, Template 4 Testing Framework & Output Comparison, Template 4 Qualitative & Quantitative Analysis), and Ethical Considerations & Limitations
 
 ## Jana Almarshad | 444201200
 
