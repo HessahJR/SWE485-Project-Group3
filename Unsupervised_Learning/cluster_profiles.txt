@@ -25,7 +25,7 @@ financial data where income and asset levels form a continuum
 rather than clearly separated groups.
 
 ----------------------------------------------------------------
-2. CLUSTER 0 — LOW-INCOME APPLICANTS
+2. CLUSTER 0 — MODEST-INCOME APPLICANTS
 ----------------------------------------------------------------
 Size          : 1,514 applicants (35.5% of total)
 Approval Rate : 63.7%  (Approved: 964 | Rejected: 550)
@@ -62,7 +62,7 @@ Advice System Role:
   chances.
 
 ----------------------------------------------------------------
-3. CLUSTER 1 — MEDIUM-INCOME APPLICANTS
+3. CLUSTER 1 — MODERATE FINANCIAL PROFILE APPLICANTS
 ----------------------------------------------------------------
 Size          : 1,582 applicants (37.1% of total — largest group)
 Approval Rate : 60.6%  (Approved: 958 | Rejected: 624)
@@ -100,7 +100,7 @@ Advice System Role:
   primary risk factor for this group.
 
 ----------------------------------------------------------------
-4. CLUSTER 2 — HIGH-INCOME APPLICANTS
+4. CLUSTER 2 — AFFLUENT / LARGE-LOAN APPLICANTS
 ----------------------------------------------------------------
 Size          : 1,173 applicants (27.5% of total — smallest group)
 Approval Rate : 62.6%  (Approved: 734 | Rejected: 439)
