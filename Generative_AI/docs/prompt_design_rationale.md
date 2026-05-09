@@ -457,7 +457,7 @@ For this project, the prompts followed these best practices by:
 - Defining the model role as a bank loan officer.
 - Providing structured applicant information.
 - Including the model prediction as context.
-- Specifying different output behavior for approved and rejected cases.
+- Adapting output behavior based on approved and rejected cases.
 - Keeping the response clear, concise, and professional.
 - Testing the prompt using strong, weak, and borderline applicant profiles.
 
