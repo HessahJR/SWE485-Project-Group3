@@ -3,7 +3,8 @@
 ## Hissah Aljreawi | 444201054
 
 ### Task Role:
-- Phase 1: Data & Domain Team (Problem Definition & Domain Selection,and Dataset Selection & Justification) 
+- Phase 1: Data & Domain Team (Problem Definition & Domain Selection,and Dataset Selection & Justification)
+  
 - Phase 2: Generative AI Integration (Template 3 Design Documentation, Template 3 Testing Framework & Output Comparison, Template 3 Analysis) and Best Prompt Selection & Justification.
 
 ## Latifa Bahafid | 444200081
@@ -25,8 +26,9 @@
 ## Jana Almarshad | 444201200
 
 ### Task Role:
-- Phase 1:
-- Phase 2:Unsupervised Learning (Clustering Rationale & Algorithm Selection, Data Preparation, Cluster Determination using Elbow Method & Silhouette Analysis).
+- Phase 1: Preprocessing & Visualization Team (Data Cleaning, Encoding Categorical and Target Variables, Outlier Detection and Analysis, Feature Engineering, Feature Scaling using StandardScaler, Save Preprocessed Dataset)
+
+- Phase 2: Unsupervised Learning (Clustering Rationale & Algorithm Selection, Data Preparation, Cluster Determination using Elbow Method & Silhouette Analysis).
 
 
 ## Leen Alhadlaq | 444200950
@@ -41,9 +43,11 @@
 
 ### Task Role:
 - Phase 1: Data & Domain Team (Exploratory Data Analysis (EDA))
-- Phase 2:Unsupervised Learning (Cluster Interpretation & Profiles, Integration Strategy with the Advice System, and Challenges & Limitations).
+
+- Phase 2: Unsupervised Learning (Cluster Interpretation & Profiles, Integration Strategy with the Advice System, and Challenges & Limitations).
 
 ## Layan Alrumayh | 444200378
 ### Task Role:
-- Phase 1:Supervised Learning (Random Forest: Model Selection & Rationale, Implementation & Training, Hyperparameter Tuning Process & Results, Comprehensive Evaluation & Interpretation) and Integration Step: Random Forest Integration Planning for the Final System.
-- Phase 2:Phase 2: Unsupervised Learning (K-Means & DBSCAN Implementation, Evaluation Metrics & Visualizations, PCA/t-SNE Cluster Visualization, and Cluster Size Distribution).
+- Phase 1: Supervised Learning (Random Forest: Model Selection & Rationale, Implementation & Training, Hyperparameter Tuning Process & Results, Comprehensive Evaluation & Interpretation) and Integration Step: Random Forest Integration Planning for the Final System.
+  
+- Phase 2: Phase 2: Unsupervised Learning (K-Means & DBSCAN Implementation, Evaluation Metrics & Visualizations, PCA/t-SNE Cluster Visualization, and Cluster Size Distribution).
